@@ -325,20 +325,20 @@ function Topbar({
     const roleUpper = (user.role || "").toUpperCase();
     let nameFallback = t("restaurantOwner");
     let roleLabel = t("owner");
-    let emailFallback = "owner@smartpos.com";
+    let emailFallback = "owner@ypos.com";
 
     if (roleUpper === "ADMIN") {
       nameFallback = t("admin");
       roleLabel = t("admin");
-      emailFallback = "admin@smartpos.com";
+      emailFallback = "admin@ypos.com";
     } else if (roleUpper === "SERVICE") {
       nameFallback = t("service");
       roleLabel = t("service");
-      emailFallback = "service@smartpos.com";
+      emailFallback = "service@ypos.com";
     } else if (roleUpper === "USER") {
       nameFallback = t("staff");
       roleLabel = t("staff");
-      emailFallback = "staff@smartpos.com";
+      emailFallback = "staff@ypos.com";
     }
 
     return {

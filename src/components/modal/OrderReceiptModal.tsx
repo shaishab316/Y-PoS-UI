@@ -27,7 +27,7 @@ const formatInvoiceDate = (dateStr: string) => {
 };
 
 const generateInvoiceInnerHtml = (order: any, business: any) => {
-  const businessName = business?.name || "Smart POS";
+  const businessName = business?.name || "Y PoS";
   const businessLogo = business?.logoUrl || "";
   const businessAddress = business?.address || "";
   const businessPhone = business?.contact || "";
@@ -634,7 +634,7 @@ const OrderReceiptModal: React.FC<OrderReceiptModalProps> = ({
     ctx.textAlign = "center";
     ctx.fillStyle = "#000000";
     ctx.font = "bold 20px 'Inter', -apple-system, sans-serif";
-    ctx.fillText((business?.name || "SMART POS").toUpperCase(), 192, 112);
+    ctx.fillText((business?.name || "Y PoS").toUpperCase(), 192, 112);
 
     ctx.fillStyle = "#64748b";
     ctx.font = "500 11px 'Inter', -apple-system, sans-serif";
@@ -976,7 +976,7 @@ const OrderReceiptModal: React.FC<OrderReceiptModalProps> = ({
               </div>
               <div className="ml-4 flex-1">
                 <h4 className="font-extrabold text-[15px] tracking-wide text-slate-950 uppercase leading-snug">
-                  {business?.name || "SMART POS"}
+                  {business?.name || "Y PoS"}
                 </h4>
                 <p className="text-[10px] text-slate-500 font-medium leading-relaxed mt-0.5 whitespace-pre-line">
                   {business?.address || "Address info placeholder"}

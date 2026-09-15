@@ -28,7 +28,7 @@ const RestaurantWelcomeBanner = () => {
                     {t("welcome")}
                 </h1>
                 <h2 className="text-3xl sm:text-4xl font-semibold text-yellow-500 mb-8">
-                    SmartPOS Restaurant
+                    Y-PoS Restaurant
                 </h2>
                 <Link
                     href={"/auth/select-order-type"}

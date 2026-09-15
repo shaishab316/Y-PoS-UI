@@ -40,7 +40,7 @@ const formatInvoiceDate = (dateStr: string) => {
 };
 
 const generateInvoiceInnerHtml = (order: Order, business: any) => {
-  const businessName = business?.name || "Smart POS";
+  const businessName = business?.name || "Y PoS";
   const businessLogo = business?.logoUrl || "";
   const businessAddress = business?.address || "";
   const businessPhone = business?.contact || "";
@@ -459,7 +459,7 @@ const OrderDetailsModal = ({ orderId, onClose }: OrderDetailsModalProps) => {
   const handleDownload = () => {
     if (!order) return;
 
-    const businessName = business?.name || "Smart POS";
+    const businessName = business?.name || "Y PoS";
     const businessLogo = business?.logoUrl || "";
     const businessAddress = business?.address || "";
     const businessPhone = business?.contact || "";
