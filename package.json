@@ -1,6 +1,6 @@
 {
-  "name": "smart-pos-admin",
-  "version": "0.1.0",
+  "name": "y-pos-ui",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
